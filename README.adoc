@@ -1,0 +1,7 @@
+# Spring Boot calling vert.x demo
+
+A small demo of a spring boot application calling vert.x
+Showing (via logging at info level) which threads are used for which
+parts of the logic (in particular that you can wrap the eventbus in
+blocking code via CompletableFuture while leaving the vert.x side
+of the eventbus entirely non-blocking and asynchronous).
